@@ -1,0 +1,155 @@
+/** 
+* 马少良
+*/
+.billing_common {
+  padding-top: 16px;
+  .el-table {
+    .cell {
+      font-size: 12px !important;
+    }
+
+    .el-input__inner {
+      height: 28px !important;
+      font-size: 12px !important;
+      background: #FFFFFF;
+      border: 1px solid #D8D8D8;
+    }
+
+    thead {
+      background: #F6F7FE !important;
+      tr {
+        background: #F6F7FE !important;
+      }
+    }
+
+    thead .cell {
+      font-family: ArialMT;
+      color: #8768FF !important;
+    }
+
+    .el-table__footer {
+      .cell {
+        &:last-child {
+          font-family: ArialMT;
+          font-size: 12px !important;
+          color: #8768FF !important;
+        }
+      }
+    }
+  }
+
+  .cost_table {
+    margin-bottom: 32px;
+  }
+
+  .back_detail,.billing_common_button {
+    button {
+      background: #8768FF !important;
+      border-radius: 6px !important;
+      border-width: 0px !important;
+      font-size: 12px !important;
+      padding: 9px 15px !important;
+    }
+  }
+
+  .CostSum {
+    .el-table__body {
+      tr {
+        &:last-child {
+          font-family: ArialMT;
+          font-size: 12px !important;
+          color: #8768FF !important;
+        }
+      }
+    }
+  }
+}
+
+.Bind {
+  .filter_item {
+    background: #F6F7FE;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    font-family: SIL-Hei-Med-Jian;
+    font-size: 10px;
+    color: #8668FE;
+  }
+
+  .el-card {
+    border-radius: 0px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+
+    .card_line {
+      position: absolute;
+      width: 85%;
+      height: 2px;
+      background: #fff;
+      top: 68px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .el-input__inner {
+      width: 210px !important;
+      height: 30px !important;
+      text-align: center;
+      &::-webkit-input-placeholder {
+        font-family: ArialMT;
+        font-size: 12px;
+        color: #9B9B9B;
+      }
+    }
+
+    .el-input__prefix {
+      left: 23px;
+      i {
+        font-weight: bold;
+        color: #9B9B9B;
+      }
+    }
+
+    .el-card__header,.el-card__body{
+      background: #EBEEFE;
+    }
+
+    .el-card__header {
+      border-bottom-width: 0px;
+    }
+
+    .el-card__body {
+      padding: 10px 20px;
+      .el-table {
+        background: rgba(255, 255, 255, 0.4);
+
+        .el-table__column-filter-trigger {
+          i {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8668FE;
+            transform: translateX(8px) translateY(2px);
+          }
+        }
+      }
+
+      .el-table thead, .el-table tr {
+        background: rgba(255, 255, 255, 0.4) !important;
+      }
+    }
+
+    .bindTableHead  {
+      font-size: 12px !important;
+      padding: 0 20px;
+      .title {
+        font-family: ArialMT;
+        color: #8668FE;
+      }
+      .el-button {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

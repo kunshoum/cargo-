@@ -1,0 +1,39 @@
+@import "../mixin.less";
+.Home {
+	padding: 10px 40px;
+	.nav_wrap {
+		margin-bottom: 20px;
+
+		.nav_cards {
+			display: flex;
+			justify-content: space-around;
+			padding: 15px;
+			border: 1px solid #fff;
+			cursor: pointer;
+
+			img,.path {
+				transition: 500ms;
+			}
+
+			&:hover {
+				border-color: #409EFF;
+				img {
+					transform: scale(1.2);
+				}
+				.path {
+					color: #409EFF;
+				}
+			}
+
+			.info {
+				padding: 10px 0;
+				p {
+					margin: 5px 0;
+				}
+				.name {
+					color: #338cbc;
+				}
+			}
+		}
+	}
+}

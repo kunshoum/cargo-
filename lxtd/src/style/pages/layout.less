@@ -1,0 +1,115 @@
+@import "../mixin.less";
+.Layout {
+  .fillFull;
+  .head {
+    background-color: #b3c0d1;
+    color: #333;
+    line-height: 60px;
+  }
+
+  .main {
+    background-color: #DCDFE6;
+    padding: 0px !important;
+  }
+
+  .aside {
+    overflow: visible;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .foot {
+    background-color: #324157;
+  }
+}
+
+.Receive, .Mail, .arrival, .delivery, .Booking, .System, .Ticket, .Report, .Prepay, .Flight_management, .BasicData {
+  height: 100%;
+  padding: 20px;
+  background: #fff;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+// 开单
+.Billing {
+  position: relative;
+  padding: 0px 120px;
+  height: 100%;
+  box-sizing: border-box;
+
+  .tabs {
+    .el-tabs__item {
+      font-family: ArialMT;
+      font-size: 14px;
+      &:hover {
+        color: #8668FE;
+      }
+    }
+    .el-tabs__item.is-active {
+      color: #8668FE;
+    }
+    .el-tabs__active-bar {
+      background-color: #8668FE;
+    }
+    .el-tabs__nav-wrap::after {
+      height: 1px;
+      background-color: #F5A623;
+    }
+  }
+
+  .closeBilling {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 30px !important;
+    color: #9B9B9B;
+    &:hover {
+      color: #fa5555;
+    }
+  }
+}
+.departs {
+  position: relative;
+
+  .closeBilling {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 24px !important;
+    color: #878d99;
+    &:hover {
+      color: #fa5555;
+    }
+  }
+}
+
+// 查询
+.Search {
+  .search_form {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d8dce5;
+    margin-bottom: 12px;
+  }
+
+  .btn_wrap {
+    margin-bottom: 10px;
+  }
+  
+  .el-table{
+    .warning-row {
+      background: oldlace;
+    }
+    .success-row {
+      background: #f0f9eb;
+    }
+    .cancel-row {
+      background: rgb(255, 206, 206);
+    }
+  }
+}
+
+.el-tabs__item {
+  font-size: 16px !important;
+}

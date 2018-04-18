@@ -1,0 +1,155 @@
+@import "../mixin.less";
+@keyframes sunrise {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes sunrise_one {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.Login {
+  .fillFull;
+  position: relative;
+  overflow: hidden;
+  // background-image: url("@/images/fgbg.png");
+  img{
+    width:100%; height:100%;
+  }
+  .box_flight {
+    
+    width: 520px;
+    height: 320px;
+    img{
+      
+      width: 100%;
+      height: 100%;
+    }
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 5%;
+    margin: auto;
+    z-index: 99;
+    // .flight_img {
+    //   width: 677px;
+    //   height: 226px;
+    //   position: absolute;
+    //   //    left: 4%;
+    //   top: calc(~"50% - 113px");
+    //   opacity: 0.9;
+    // }
+
+    .login_form {
+      // display: none;
+      width: 520px;
+      height: 320px;
+      //    margin: auto;
+      .centerY;
+      right: 0;
+      bottom: 0;
+      
+    background: rgba(255,255,255,.8);
+
+      .logo {
+        text-align: center;
+        
+        img {
+          display: inline-block;
+          width: 376px;
+          height: 62px;
+          margin-top: 30px;
+        }
+      }
+      .box_card {
+        .centerX;
+        
+        .login_ipt {
+          .el-input__inner{
+            text-align: center;
+            font-family: JHeiTi!important;
+            font-size: 16px!important;
+            color: #7489FF!important;
+            border: 0px solid #7489FF!important;
+            background-color: rgba(255,255,255,0)
+          }
+          
+          margin-bottom: 15px;
+          width: 420px;
+          border-bottom: 2px solid #7489FF;
+        }
+        .el-input__inner::-webkit-input-placeholder{
+          font-family: JHeiTi !important;
+          font-size: 16px !important;
+          color: #7489FF !important;
+          text-align: center !important;
+        }
+        .login_btn {
+          width: 420px;
+          height: 60px;
+          background: #95A5FB;
+          font-family: Arial-BoldMT;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+      }
+      .el-card{
+        border: 0px solid #e6ebf5;
+        background: rgba(205,212,252,0)!important;
+        box-shadow: none!important;
+        color: none!important;
+        margin-top: 25px;
+      }
+    }
+  }
+  .login_bg {
+    .fillFull;
+    top: calc(~"12% - 113px");
+    .yun_img {
+      .fillFull;
+      animation: sunrise 15s linear infinite;
+    }
+    .yun_img_one {
+      .fillFull;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      animation: sunrise_one 15s infinite linear;
+    }
+  }
+
+  .login_wrap {
+    display: none;
+    width: 2000px;
+    height: 700px;
+    background-color: #99ccff;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1000px;
+    margin-top: -350px;
+    h1 {
+      // font-size: 28px;
+      color: black;
+      text-align: center;
+      margin-top: 5%;
+    }
+    .content {
+      font-size: 26px;
+      text-indent: 50px;
+      color: black;
+      text-align: center;
+      margin: 8% 10%;
+    }
+  }
+}
